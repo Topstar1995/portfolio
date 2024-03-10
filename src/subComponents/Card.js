@@ -7,7 +7,7 @@ import { Github } from '../components/AllSvgs';
 
 
 const Box = styled(motion.li)`
-width: 16rem;
+width: 23rem;
 height: 40vh;
 background-color: ${props => props.theme.text};
 color:${props => props.theme.body};
@@ -29,13 +29,31 @@ border: 1px solid ${props => props.theme.text};
 `
 const Title = styled.h2`
 font-size: calc(1em + 0.5vw);
+border-bottom: 1px solid ${props => props.theme.text};
 `
 
 const Description = styled.h2`
 font-size: calc(0.8em + 0.3vw);
 font-family: 'Karla',sans-serif;
 font-weight: 500;
+
+&:hover{
+    cursor:pointer
+}
 `
+const Image = styled.div`
+  background-image: ${(props) => `url(${props.img})`};
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  border: 1px solid transparent;
+  background-position: center center;
+
+  ${Box}:hover & {
+    border: 1px solid ${(props) => props.theme.body};
+  }
+`
+
 const Tags = styled.div`
 border-top: 2px solid ${props =>props.theme.body};
 padding-top: 0.5rem;
@@ -97,28 +115,23 @@ const Item = {
 
 const Card = (props) => {
 
-    const {id, name, description, tags, demo, github} = props.data;
+    const {id, name, description, tags, demo, github, img} = props.data;
 
     return (
         <Box key={id} variants={Item}>
             <Title>{name}</Title>
-            <Description>
-                {description}
-            </Description>
+            <Image img={img} />
             <Tags>
             {
-                    tags.map((t,id) => {
-                        return <Tag key={id}>#{t}</Tag>
-                    })
-                }
+                tags.map((t,id) => {
+                    return <Tag key={id}>#{t}</Tag>
+                })
+            }
             </Tags>
             <Footer>
                 <Link href={demo} target="_blank">
                     Visit
                 </Link>
-                <Git  href={github}  target="_blank">
-                    <Github width={30} height={30} />
-                </Git>
             </Footer>
         </Box>
     )

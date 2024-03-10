@@ -1,63 +1,74 @@
 // work data
+import memrise from "../assets/Images/memrise1.png"
+import meeman from "../assets/Images/meeman.png"
+import camus from "../assets/Images/Camus.png"
+import health from "../assets/Images/health.png"
+import boat from "../assets/Images/click&boat.png"
 
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
+        name:"SaaS Platform",
         description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        tags:[],
+        img: camus,
         
-        demo:"https://agency-website-eta.vercel.app/",
+        demo:"https://www.camus.energy/",
         github:"https://github.com/codebucks27/Agency-website"
     },
     {
         id:2,
-        name:"Job listing website",
+        name:"Language Learning Platform",
         description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        tags:[],
+        img: memrise,
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
+        demo:"https://www.memrise.com/",
         github:"https://github.com/codebucks27/react-job-listing-website"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
+        name:"E-Commerce Platform",
         description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        tags:[],
+        img: meeman,
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
+        demo:"https://neemans.com/",
         github:"https://github.com/codebucks27/devto-clone"
     },
     {
         id:4,
-        name:"Sidebar Menu",
+        name:"HealthCare Platform",
         description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        tags:[],
+        img: health,
         
-        demo:"https://react-sidebar.vercel.app/",
+        demo:"https://healthefoundation.eu/",
         github:"https://github.com/codebucks27/react-sidebar"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
+        name:"Rental Service",
         description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+        tags:[],
+        img: boat,
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
+        demo:"https://www.clickandboat.com/en/",
         github:"https://github.com/codebucks27/React-Redux-Todo-App"
         
     },
-    {
-        id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
+    // {
+    //     id:6,
+    //     name:"Responsive Navigation Menu",
+    //     description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
+    //     tags:[],
+    //     img: memrise,
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
+    //     demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
+    //     github:"https://github.com/codebucks27/React-responsive-navbar"
         
-    },
+    // },
     
   
 ] 

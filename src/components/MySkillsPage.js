@@ -85,66 +85,40 @@ ul,p{
 const MySkillsPage = () => {
     return (
         <ThemeProvider theme={lightTheme}>
-<Box>
+            <Box>
 
-<LogoComponent theme='light'/>
-<SocialIcons theme='light'/>
-<PowerButton />
-<ParticleComponent theme='light' />
-            <Main>
-<Title>
-    <Design width={40} height={40} /> Designer
-</Title>
-<Description>
-I love to create design which speaks, Keep it clean, minimal and simple.
-</Description>
-<Description>
-<strong>I like to Design</strong>
-<ul>
-    <li>
-        Web Design
-    </li>
-    <li>
-        Mobile Apps
-    </li>
-</ul>
-</Description>
-<Description>
-<strong>Tools</strong>
-<ul>
-    <li>
-       Figma
-    </li>
-    
-</ul>
-</Description>
-
-            </Main>
-            <Main>
-<Title>
-    <Develope width={40} height={40} /> Frontend Developer
-</Title>
-<Description>
-I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
-</Description>
-<Description>
-<strong>Skills</strong>
-<p>
-Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
-</p>
-</Description>
-<Description>
-<strong>Tools</strong>
-<p>
-VScode, Github, Codepen etc.
-</p>
-</Description>
-
-            </Main>
+                <LogoComponent theme='light'/>
+                <SocialIcons theme='light'/>
+                <PowerButton />
+                <ParticleComponent theme='light' />
+                <Main>
+                    <Title>
+                        <Develope width={40} height={40} /> Frontend
+                    </Title>
+                    <Description>
+                    <strong>Skills</strong>
+                    <p>
+                    HTML, HTML5, CSS, JavaScript, TypeScript, SCSS, React, Redux, Refine, Next.js, Vue3, Nuxt.js, Sass, Bootstrap, Tailwind, MaterialUI, ChakraUI, Ant Design, ThemeUI, Emotion, Styled Components, Vercel, Firebase, Git, Docker etc.
+                    </p>
+                    </Description>
+                    <p></p>
+                </Main>
+                <Main>
+                    <Title>
+                        <Develope width={40} height={40} /> Backend
+                    </Title>
+                    <Description>
+                    <strong>Skills</strong>
+                    <p>
+                    Node.js, Express.js, Nest.js, Golang Python, Django, Flask, PHP, Laravel, WebSocket, WebRTC, Restfull API, MySQL, MongoDB, PostgreSQL, DynamoDB, GraphQL, AWS, Heroku, GPT AI, FensorFlow AI,
+                    </p>
+                    </Description>
+                    <p></p>
+                </Main>
 
             <BigTitle text="SKILLS" top="80%" right="30%" />
 
-        </Box>
+            </Box>
 
         </ThemeProvider>
         
