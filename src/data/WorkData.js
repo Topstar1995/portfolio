@@ -3,7 +3,8 @@ import memrise from "../assets/Images/memrise1.png"
 import meeman from "../assets/Images/meeman.png"
 import camus from "../assets/Images/Camus.png"
 import health from "../assets/Images/health.png"
-import boat from "../assets/Images/click&boat.png"
+// import boat from "../assets/Images/click&boat.png"
+import boat from "../assets/Images/click&boat.jpg"
 
 export const Work = [
     {
